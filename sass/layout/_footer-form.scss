@@ -25,6 +25,16 @@
 
 .footer-form-wrap {
     display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 480px) {
+           justify-content: center;
+        }
+   @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+     
+
+   }
 }
 
 .footer-icon {
@@ -49,7 +59,7 @@
 }
 
 .footer-input {
-    min-width: 358px;
+    // min-width: 358px;
     height: 50px;
     padding-left: 16px;
     margin-right: 12px;
@@ -86,6 +96,22 @@
             transition-property: border-color;
             @extend %transition-properties;
         }
+     @media screen and (max-width: 480px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    @media screen and (min-width: 480px) {
+             width: 100%;
+             margin-bottom: 20px;
+         }
+     @media screen and (min-width: 768px) {
+             width: 100%;
+             margin-bottom: 20px;
+         }
+         @media screen and (min-width: 768px) {
+            min-width: 358px;
+            
+         }
 }
 
 
