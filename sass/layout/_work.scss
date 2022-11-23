@@ -11,7 +11,12 @@
         }
 
 }
+.work-list {
+    display: flex;
+        gap: 30px;
+    
 
+}
 .work-item {
     position: relative;
 }

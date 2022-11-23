@@ -79,7 +79,7 @@
           </button>
           <ul class="mob-menu-list list">
             <li class="mob-menu-item link">
-              <a class="mob-menu-link link " href="./index.html"> Студія</a>
+              <a class="mob-menu-link link mob-current'" href="./index.html"> Студія</a>
             </li>
             <li class="mob-menu-item link">
               <a class="mob-menu-link link" href="./portfolio.html"> Портфоліо</a>
@@ -189,34 +189,58 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-item list">
-              <img
+              <picture>
+                <source
+                  srcset="./images/general/img_1.jpg 1x, 
+                 ./images/general/img_1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+             <img
                 class="work-item-img"
                 src="./images/general/img_1.jpg"
                 alt="На столі видно руки чоловіка, який працює за планшетним комп'ютером"
                 width="370"
                 height="294"
               />
+              </picture>
+              
 
               <p class="work-title-wrapper">Десктопні додатки</p>
             </li>
             <li class="work-item list">
-              <img
+              <picture>
+                <source
+                  srcset="./images/general/box_2.jpg 1x, 
+                 ./images/general/box_2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+             <img
                 class="work-item-img"
                 src="./images/general/box_2.jpg"
                 alt="Жінка тримає в руках смартфон і на ноутбуці відображається попередній вигляд сайту на смартфоні"
                 width="370"
                 height="294"
               />
+              </picture>
+             
               <p class="work-title-wrapper">Мобільні додатки</p>
             </li>
             <li class="work-item list">
-              <img
+               <picture>
+                <source
+                  srcset="../images/general/box_3.jpg 1x, 
+                 ./images/general/box_3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+           <img
                 class="work-item-img"
                 src="./images/general/box_3.jpg"
                 alt="На планшеті відображаються усі кольори у вигляді шестикутника заповненого сотами"
                 width="370"
                 height="294"
               />
+              </picture>
+              
               <p class="work-title-wrapper">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -230,7 +254,8 @@
             <li class="team-item">
               <picture>
                 <source
-                  srcset="./images/team/team-card-1.jpg 1x, ./images/team/team-card-1-2x.jpg 2x"
+                  srcset="./images/team/team-card-1.jpg 1x, 
+                  ./images/team/team-card-1-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source

@@ -22,6 +22,13 @@
     text-align: center;
     letter-spacing: 0.06em;
 }
+.container-form {
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        
+    }
+
+}
 
 .footer-form-wrap {
     display: flex;
@@ -31,6 +38,7 @@
            justify-content: center;
         }
    @media screen and (min-width: 1200px) {
+   
       flex-wrap: nowrap;
      
 

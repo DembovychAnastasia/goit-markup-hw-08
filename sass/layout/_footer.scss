@@ -3,6 +3,7 @@
     background: var(--accent-bgc);
     padding-top: 60px;
     padding-bottom: 60px;
+  
 }
 
 
@@ -41,6 +42,12 @@
             gap: 70px;
          justify-content: center;
         text-align: center;
+            }
+            @media screen and (min-width: 1200px) {
+            text-align: left;
+            align-items: baseline;
+            justify-content: space-between;
+                
             }
 
 }
