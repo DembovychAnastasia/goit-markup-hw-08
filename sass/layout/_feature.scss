@@ -19,6 +19,13 @@
     // letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+
 }
 
 .feature__list,
