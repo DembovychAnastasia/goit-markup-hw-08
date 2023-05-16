@@ -1540,15 +1540,34 @@ img {
 
 /* ------Portfolio-Filter------ */
 .filter-list {
-  margin-bottom: 50px;
+  gap: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: inline block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .filter-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .filter-list {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-btn {
@@ -1576,6 +1595,15 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filter-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .filter-btn:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
+}
 /* ------------GALLERY------------- */
 .gallery-list a {
   text-decoration: none;
@@ -1589,7 +1617,6 @@ img {
 }
 
 .title {
-  min-width: 322px;
   margin-bottom: 4px;
 }
 
@@ -1640,6 +1667,15 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .gallery-list p.gallery-text {
   font-size: 16px;
@@ -1647,9 +1683,34 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text);
 }
+@media (max-width: 767px) {
+  .gallery-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .gallery-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .gallery-item {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .gallery-link {
